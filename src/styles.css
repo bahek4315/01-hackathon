@@ -32,6 +32,7 @@ body {
     padding: 8px 10px;
     font-size: 1rem;
     color: #6bbdf3;
+    border: 2px solid transparent;
     cursor: pointer;
     transition: background-color .2s ease-in;
     border-radius: inherit;
@@ -39,4 +40,5 @@ body {
 
 .menu .menu-item:hover {
     background: #4d4d4d;
+    border: 2px ridge #6bbdf3;
 }
