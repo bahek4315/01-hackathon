@@ -41,5 +41,5 @@ body {
     margin-right: 10px;
     background-position: 100% 0;
     transition: all .4s ease-in-out;
-    margin-left: 5px;
+    transform: translateX(5px);
 }
