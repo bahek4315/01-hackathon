@@ -1,6 +1,6 @@
 import './styles.css';
 import {Greet} from './modules/greet.module';
-import {CustomMessage} from './modules/greet.module';
+import {CustomMessage} from './modules/message.module';
 import {ContextMenu} from './menu';
 
 const menu = new ContextMenu('.menu');
