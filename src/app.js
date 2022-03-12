@@ -6,7 +6,7 @@ import {FigureModule} from './modules/figure.module'
 const menu = new ContextMenu('.menu');
 
 menu.add(new Greet('greet', 'Приветствие'));
-menu.add(new FigureModule('figure', 'Создать фигуру'));
+menu.add(new FigureModule('figure', 'Создать рандомную фигуру'));
 menu.open();
 
 

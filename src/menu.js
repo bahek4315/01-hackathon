@@ -2,7 +2,7 @@ import {Menu} from './core/menu';
 
 export class ContextMenu extends Menu {
     open() {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowX = 'hidden';
         document.addEventListener('contextmenu', (event) => {
             event.preventDefault();
             this.el.style.position = 'absolute';
