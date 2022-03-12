@@ -1,4 +1,4 @@
-import {Menu} from './core/menu'
+import {Menu} from './core/menu';
 
 export class ContextMenu extends Menu {
     open() {
@@ -11,10 +11,11 @@ export class ContextMenu extends Menu {
             this.el.style.display = 'block';
         })
     }
+    
     close() {
         this.el.style.display = 'none';
     }
-
+  
     add(module) {
         this.el.insertAdjacentHTML('beforeend', module.toHTML());
         const newModule = this.el.querySelector(`[data-type='${module.type}']`);

@@ -18,7 +18,7 @@ body {
     position: fixed;
     z-index: 1000;
     width: 150px;
-    background: #1b1a1a;
+    background: #313131;
     border-radius: 5px;
     display: none;
     list-style: none;
@@ -31,12 +31,12 @@ body {
 .menu .menu-item {
     padding: 8px 10px;
     font-size: 1rem;
-    color: #eee;
+    color: #6bbdf3;
     cursor: pointer;
     transition: background-color .2s ease-in;
     border-radius: inherit;
 }
 
 .menu .menu-item:hover {
-    background: #343434;
+    background: #4d4d4d;
 }
