@@ -39,35 +39,38 @@ export class FigureModule extends Module {
 
         let time = 5;
 
-        const wrapper = document.createElement('div');
-        wrapper.style.display = 'flex';
-        wrapper.style.height = '300px';
-        wrapper.style.width = '400px';
-        wrapper.style.backgroundColor = '#313131';
-        wrapper.style.color = '#6bbdf3';
-        wrapper.style.borderRadius = '5px';
-        wrapper.style.fontSize = '22px';
-        wrapper.style.display = 'flex';
-        wrapper.style.flexDirection = 'column';
-        wrapper.style.alignItems = 'center';
-        wrapper.style.justifyContent = 'flex-start';
-
-        const timerText = document.createElement('div');
-        timerText.style.margin = '20px 0';
-        timerText.textContent = `Фигура удалится через ${time} секунд(ы)`;
-
-        wrapper.append(timerText);
-        wrapper.append(randomChoise[random(0, 2)]());
-        document.body.append(wrapper);
-
-        const interval = setInterval(() => {
-            time--;
+        if (!document.querySelector('.figure__wrapper')) {
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('figure__wrapper');
+            wrapper.style.display = 'flex';
+            wrapper.style.height = '300px';
+            wrapper.style.width = '400px';
+            wrapper.style.backgroundColor = '#313131';
+            wrapper.style.color = '#6bbdf3';
+            wrapper.style.borderRadius = '5px';
+            wrapper.style.fontSize = '22px';
+            wrapper.style.display = 'flex';
+            wrapper.style.flexDirection = 'column';
+            wrapper.style.alignItems = 'center';
+            wrapper.style.justifyContent = 'flex-start';
+            
+            const timerText = document.createElement('div');
+            timerText.style.margin = '20px 0';
             timerText.textContent = `Фигура удалится через ${time} секунд(ы)`;
-        }, 1000);
-
-        setTimeout(() => {
-            clearInterval(interval);
-            wrapper.remove();
-        }, time * 1000);
+            
+            wrapper.append(timerText);
+            wrapper.append(randomChoise[random(0, 2)]());
+            document.body.append(wrapper);
+            
+            const interval = setInterval(() => {
+                time--;
+                timerText.textContent = `Фигура удалится через ${time} секунд(ы)`;
+            }, 1000);
+        
+            setTimeout(() => {
+                clearInterval(interval);
+                wrapper.remove();
+            }, time * 1000);
+        }
     }
 }
