@@ -5,7 +5,7 @@ export class Cards extends Module {
         const picturesPath = ['https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613_960_720.jpg', 'https://cdn.pixabay.com/photo/2015/06/19/14/20/cat-814952_960_720.jpg', 'https://cdn.pixabay.com/photo/2020/11/26/07/41/maine-coon-5778153_960_720.jpg', 'https://cdn.pixabay.com/photo/2021/12/01/18/17/cat-6838844_960_720.jpg', 'https://cdn.pixabay.com/photo/2019/05/21/07/11/cat-4218424_960_720.jpg'];
         if (!document.querySelector('.pictures')) {
             const cardContainer = document.createElement('div');
-            cardContainer.classList.add('pictures')
+            cardContainer.classList.add('pictures');
             cardContainer.style.width = '700px';
             cardContainer.style.marginBottom = "20px";
 

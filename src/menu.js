@@ -15,7 +15,7 @@ export class ContextMenu extends Menu {
     close() {
         this.el.style.display = 'none';
     }
-  
+
     add(module) {
         this.el.insertAdjacentHTML('beforeend', module.toHTML());
         const newModule = this.el.querySelector(`[data-type='${module.type}']`);
