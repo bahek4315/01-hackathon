@@ -18,8 +18,6 @@ export class Cards extends Module {
             cardImg.style.border = '3px solid #6bbdf3';
             cardImg.style.borderRadius = '5px';
 
-            console.log(cardImg.style.width, cardImg.style.height);
-
             const buttonContainer = document.createElement('div');
             buttonContainer.style.display = "flex";
             buttonContainer.style.justifyContent = "space-evenly";

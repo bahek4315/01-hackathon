@@ -5,6 +5,7 @@ import {CustomMessage} from './modules/message.module';
 import {Cards} from './modules/cards.module';
 import {FigureModule} from './modules/figure.module';
 import {ClicksModule} from './modules/clicks.module';
+import {ContextMenu} from './menu';
 
 const menu = new ContextMenu('.menu');
 menu.add(new BackgroundModule('backround', 'Сменить фон'));
